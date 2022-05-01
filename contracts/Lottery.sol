@@ -27,7 +27,7 @@ contract Lottery {
         // самая обычная валидация проверяем что у пользователя
         // который деплоит транзакцию не меньше нужного нам количества
         // ethereum-a
-        require(msg.value < .01 ether);
+        require(msg.value > .01 ether);
         players.push(msg.sender);
     }
 
